@@ -4,6 +4,24 @@ This project will read the training and test data measurements from UCI.
 
 The included scripts will read, merge, process, and analyse data in order to tidy it up for analysis.
 
+## Running the Script
+
+Inside the working directory, source("run_analysis.R").
+
+The script is assuming the unzipped directory of the data is already there.  If not, then run __download_uci_data()__.
+
+Otherwise, just type __run_analysis()__
+
+This function will return the tidy data table and create an equivalent output file : _activitydata_tidy.txt_.
+
+### Important variables
+
+* _train_df_ - Merged training data frame from subject_data, Xdata, and ydata of training directory.
+* _test_df_ - Merged test data frame from subject_data, Xdata, and ydata of test directory.
+* _alldata_df_ - Merged train_df and test_df with labels for the columns.
+* _activity_cleandf_ - the "clean" extracted data from alldata_df with only "mean" and "std" vectors.  Also has translated "activity_name" vector to provide a name for activity number.
+* _activity_tidydf_ - final output of _tidy_ dataset, with rows grouped by subject and activity with mean of each feature vector.
+
 ## Files:
 
 ### README.md
