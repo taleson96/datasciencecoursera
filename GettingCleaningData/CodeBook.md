@@ -91,6 +91,6 @@ The set of variables that were estimated from these signals are:
 XYZ : Consists of three values for each dimension of travel: X, Y, or Z.
 mean|std: Mean value and Standard deviation values for this feature.
 
-Overall there are 79 X features, with 3 additional variables (subject, activity, activity_name) for a total of 82.
+Overall there are 66 X features, with 3 additional variables (subject, activity, activity_name) for a total of 69.
 
-__Final size of tidy table: 120 obs by 82 variables.__
+__Final size of tidy table: 120 obs by 69 variables.__

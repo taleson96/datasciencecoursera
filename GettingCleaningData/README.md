@@ -8,7 +8,8 @@ The included scripts will read, merge, process, and analyse data in order to tid
 
 Inside the working directory, source("run_analysis.R").
 
-The script is assuming the unzipped directory of the data is already there.  If not, then run __download_uci_data()__.
+The script is assuming the unzipped directory of the data is already there.  
+If not, then run __download_uci_data()__.
 
 Otherwise, just type __run_analysis()__
 
