@@ -1,6 +1,6 @@
-## Human Activity Recognition Data Tidy
+# Human Activity Recognition Data Tidy
 
-### Original Data
+## Original Data
 
 Data file is downloaded from link provided by Coursera Instructor (see below):
 
@@ -22,7 +22,7 @@ In order to build the tidy data tables in R, the following files were used. (Not
 * _"UCI HAR Dataset/features.txt"_ - Name of each column/feature of X_test.txt.
 * _"UCI HAR Dataset/features_info.txt"_ - Description of the features of X_Test.txt.
 
-### New Tidy Data "activitydata_tidy.txt"
+## New Tidy Data "activitydata_tidy.txt"
 The goal of this project is to combine the training and test data provided in the files described in the original data and extract and analyze the data.
 
 From the original training and test data provided by UCI has been reduced to only the mean and standard deviation features of the data set. This data contains the selected features used to create the _tidy_ dataset.  
@@ -31,7 +31,7 @@ The _tidy_ dataset is comprised of the mean of the selected features, grouped by
 
 The __dplyr__ library is used to perform the analysis.
 
-#### The merge data.
+### The merge data.
 
 The subject, xdata and ydata for first read and merged via cbind() to create a single data table for training and similarly for test data.
 
@@ -62,7 +62,7 @@ This reduces the rows from several thousand to 30 subjects \* 6 activities = 120
 
 * subject - the subject number from 1:30 who preformed the activity being measured.
 * activity_name - the name of the activity being performed.  
-    ** Can be "walking", "walking_upstairs", "walking_downstairs", "sitting", "standing", or "laying"
+** Can be "walking", "walking_upstairs", "walking_downstairs", "sitting", "standing", or "laying"
 * activity - the numbered code of the activity from 1:6
 
 The data variables below represent the "mean" of the selected features grouped by the "subject" and "activity_name".

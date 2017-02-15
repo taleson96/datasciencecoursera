@@ -28,13 +28,11 @@ Included in this file are two functions:
 
 ### CodeBook.md
 
-Descriptions of the tidy data table returned by running "run_analysis()"
+Method of creating and descriptions of the tidy data table returned by running "run_analysis()".
 
 ### activitydata_tidy.txt
 
-The table of data written by "run_analysis()".  Included for versioning.
-
-This data is detailed in CodeBook.md
+The table of data written by "run_analysis()".  Included for versioning. This generated data is detailed in CodeBook.md
 
 ## Data:
 
@@ -64,9 +62,9 @@ In order to build the tidy data tables in R, the following files were used. (Not
 
 For generating and sharing this data, a special thanks goes to:
 
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-www.smartlab.ws
+>Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+>Smartlab - Non Linear Complex Systems Laboratory
+>DITEN - Università degli Studi di Genova.
+>Via Opera Pia 11A, I-16145, Genoa, Italy.
+>activityrecognition@smartlab.ws
+>www.smartlab.ws
