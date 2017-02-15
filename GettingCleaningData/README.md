@@ -22,6 +22,10 @@ This function will return the tidy data table and create an equivalent output fi
 * _activity_cleandf_ - the "clean" extracted data from alldata_df with only "mean" and "std" vectors.  Also has translated "activity_name" vector to provide a name for activity number.
 * _activity_tidydf_ - final output of _tidy_ dataset, with rows grouped by subject and activity with mean of each feature vector.
 
+### Dependency
+
+* dplyr - used to aggregate and run mean calculation.
+
 ## Files:
 
 ### README.md
