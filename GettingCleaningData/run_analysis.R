@@ -124,7 +124,7 @@ run_analysis <- function() {
   #---------------------------------------------
   
   # Create mean and standard deviation regex to grep colnames.
-  extract_regex <- "mean|std"  
+  extract_regex <-  "mean\\(\\)|std\\(\\)" 
   
   # grep the colnames.
   extract_indexs <- grep(extract_regex,colnames(alldata_df))
@@ -137,7 +137,7 @@ run_analysis <- function() {
   activity_cleandf <- alldata_df[, extract_indexs]
   
   #---------------------------------------------
-  # Step 4: Use meaningful names for Activities
+  # Step 4: Use meaningful names for Activities (3)
   #--------------------------------------------- 
   
   # adds the activity name to the data based on the activity code from ylabels.
@@ -160,6 +160,10 @@ run_analysis <- function() {
   activity_tidydf <- activity_cleandf %>%
                      group_by(subject,activity_name) %>%
                      summarise_each(funs(mean(., na.rm=TRUE)))
+  
+  #update for meaningful name of vector now that each is an average.
+  colIndex = 3:(length(activity_tidydf)-1)
+  names(activity_tidydf)[colIndex] <- paste("avg.",names(activity_tidydf)[colIndex] )
   
   #write table to output.
   Output_file <-  "activitydata_tidy.txt"
